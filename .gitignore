@@ -1,3 +1,4 @@
 tmp
 lib/stuart_geo/*.bundle
 lib/stuart_geo/*.so
+*.gem

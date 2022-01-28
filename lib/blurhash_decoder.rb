@@ -1,5 +1,3 @@
-$:.unshift File.dirname(__FILE__)
-
 require "blurhash_decoder/blurhash_decoder"
 require 'base64'
 
