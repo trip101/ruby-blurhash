@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (13.0.6)
+    rake-compiler (1.1.9)
+      rake
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake-compiler
+
+BUNDLED WITH
+   2.1.4
