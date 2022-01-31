@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
     s.name        = 'blurhash_decoder'
-    s.version     = '0.0.9'
+    s.version     = '0.0.10'
     s.summary     = "A blurhash decoder gem!"
     s.description = "A simple blurhash decoder gem using c."
     s.authors     = ["Rabin Poudyal"]
@@ -13,5 +13,5 @@ Gem::Specification.new do |s|
     s.homepage    =
         'https://rubygems.org/gems/blurhash_decoder'
     s.license       = 'MIT'
-    s.extensions = %w[ext/blurhash_decoder/extconf.rb]
+    s.extensions = %w[ext/blurhash_decoder/extconf.rb ext/blurhash_encoder/extconf.rb]
 end
