@@ -3,7 +3,7 @@
 
 Gem::Specification.new do |s|
     s.name        = 'blurhash_decoder'
-    s.version     = '0.0.10'
+    s.version     = '0.0.11'
     s.summary     = "A blurhash decoder gem!"
     s.description = "A simple blurhash decoder gem using c."
     s.authors     = ["Rabin Poudyal"]
