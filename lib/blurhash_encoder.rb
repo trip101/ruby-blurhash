@@ -1,6 +1,5 @@
-require "blurhash_encoder/blurhash_encoder"
 require 'open-uri'
-
+require_relative './blurhash_encoder/blurhash_encoder'
 
 class BlurhashEncoder
   include ENCODER
