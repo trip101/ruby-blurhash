@@ -1,9 +1,8 @@
-require "decoder"
+require File.expand_path('lib/blurhash_decoder/binary/blurhash_decoder')
 require 'base64'
 
 class BlurhashDecoder
   include DECODER
-  VERSION = "1.0"
 
   def decode_blurhash(blurhash, height, width, punch)
     decode(blurhash, height, width, punch)
@@ -14,5 +13,3 @@ class BlurhashDecoder
   end
 
 end
-
-# puts BlurhashDecoder.new.decode_blurhash("LEAclNah=_xC0K%LInWo9tE2jvNH", 2, 5, 1)
