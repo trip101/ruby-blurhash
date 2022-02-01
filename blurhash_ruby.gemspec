@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
     s.authors     = ["Rabin Poudyal"]
     s.email       = 'rabin@trip101.com'
     s.files       = `git ls-files`.split("\n")
-    s.require_paths = %w[lib]
+    s.require_paths = %w(lib)
     s.homepage    =
         'https://rubygems.org/gems/blurhash_ruby'
     s.license       = 'MIT'

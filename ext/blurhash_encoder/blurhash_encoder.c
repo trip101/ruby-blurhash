@@ -16,7 +16,7 @@ VALUE method_encode(VALUE self, VALUE x, VALUE y) {
     int xComponents = NUM2INT(x);
     int yComponents = NUM2INT(y);
 
-    const char * input_file = "tmp/in.png";
+    const char * input_file = "buffer/in.png";
 
     if(xComponents < 1 || xComponents > 8 || yComponents < 1 || yComponents > 8) {
 		fprintf(stderr, "Component counts must be between 1 and 8.\n");
