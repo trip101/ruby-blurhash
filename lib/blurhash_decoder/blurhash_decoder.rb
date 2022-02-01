@@ -1,4 +1,4 @@
-require_relative "./blurhash_decoder/blurhash_decoder"
+require "decoder"
 require 'base64'
 
 class BlurhashDecoder
