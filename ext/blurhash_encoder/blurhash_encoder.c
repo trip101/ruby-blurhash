@@ -3,9 +3,9 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
 
-#include <stdio.h>
 #include <ruby.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
 
 
 VALUE ENCODER = Qnil;  /* Ruby Module */
