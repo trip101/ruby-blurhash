@@ -1,5 +1,4 @@
 tmp
 lib/blurhash_decoder/binary/*.bundle
 lib/blurhash_encoder/binary/*.bundle
-lib/stuart_geo/*.so
 *.gem

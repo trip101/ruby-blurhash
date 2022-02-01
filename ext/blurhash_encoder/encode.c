@@ -1,5 +1,5 @@
 #include "encode.h"
-#include "common.h"
+#include "../common.h"
 
 #include <string.h>
 
