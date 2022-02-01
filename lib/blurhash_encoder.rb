@@ -1,5 +1,5 @@
+require 'blurhash_ruby/blurhash_encoder'
 require 'open-uri'
-require File.expand_path('lib/blurhash_encoder/binary/blurhash_encoder')
 
 class BlurhashEncoder
   include ENCODER
