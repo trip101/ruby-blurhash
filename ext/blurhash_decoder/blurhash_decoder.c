@@ -12,7 +12,7 @@ VALUE method_decode(VALUE self, VALUE blurhash, VALUE heigh, VALUE widt, VALUE p
     int width = NUM2INT(widt);
     int punch = NUM2INT(punc);
 
-    const char * output_file = "buffer/out.png";
+    const char * output_file = "tmp/out.png";
 
     const int nChannels = 4;
 
