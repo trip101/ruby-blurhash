@@ -7,6 +7,6 @@ class Blurhash
   end
 
   def self.decode(blurhash, height = 2, width = 4, punch = 1)
-    BlurhashEncoder.new.decode_blurhash(blurhash, height, width, punch)
+    BlurhashDecoder.new.decode_blurhash(blurhash, height, width, punch)
   end
 end
