@@ -12,11 +12,11 @@ VALUE ENCODER = Qnil;  /* Ruby Module */
 
 const char *blurHashForFile(int xComponents, int yComponents,const char *filename);
 
-VALUE method_encode(VALUE self, VALUE x, VALUE y) {
+VALUE method_encode(VALUE self, VALUE path ,VALUE x, VALUE y) {
     int xComponents = NUM2INT(x);
     int yComponents = NUM2INT(y);
 
-    const char * input_file = "tmp/in.png";
+    const char * input_file = StringValuePtr(path);
 
     if(xComponents < 1 || xComponents > 8 || yComponents < 1 || yComponents > 8) {
 		fprintf(stderr, "Component counts must be between 1 and 8.\n");
@@ -47,6 +47,6 @@ const char *blurHashForFile(int xComponents, int yComponents,const char *filenam
 void
 Init_blurhash_encoder(void) {
     ENCODER = rb_define_module("ENCODER");
-    rb_define_method(ENCODER, "encode", method_encode, 2);
+    rb_define_method(ENCODER, "encode", method_encode, 3);
 }
 

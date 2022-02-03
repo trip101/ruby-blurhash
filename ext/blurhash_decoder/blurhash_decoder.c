@@ -6,13 +6,13 @@
 
 VALUE DECODER = Qnil;  /* Ruby Module */
 
-VALUE method_decode(VALUE self, VALUE blurhash, VALUE heigh, VALUE widt, VALUE punc) {
+VALUE method_decode(VALUE self, VALUE path, VALUE blurhash, VALUE heigh, VALUE widt, VALUE punc) {
     const char * hash = StringValuePtr(blurhash);
     int height = NUM2INT(heigh);
     int width = NUM2INT(widt);
     int punch = NUM2INT(punc);
 
-    const char * output_file = "tmp/out.png";
+    const char * output_file = StringValuePtr(path);
 
     const int nChannels = 4;
 
@@ -34,6 +34,6 @@ VALUE method_decode(VALUE self, VALUE blurhash, VALUE heigh, VALUE widt, VALUE p
 void
 Init_blurhash_decoder(void) {
     DECODER = rb_define_module("DECODER");
-    rb_define_method(DECODER, "decode", method_decode, 4);
+    rb_define_method(DECODER, "decode", method_decode, 5);
 }
 
