@@ -3,3 +3,4 @@ lib/blurhash_ruby/*.bundle
 lib/blurhash_encoder/*.bundle
 *.gem
 .DS_Store
+out.png

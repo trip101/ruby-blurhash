@@ -31,8 +31,13 @@ BlurhashRuby.encode_image('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature
 _480.jpg')
 # => "LMCFqys-0gIp-os,NHNI={s,R+I;"
 
+# If you want to store shorter string in db and prepend data:image/png;base64, later
 BlurhashRuby.decode_blurhash('LHB3~nxvjYax0Mo#o#t7-cayWBWE')
 # => "iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAALElEQVR4XmMMSUj///3bB4YfX18xfP/xkYGFjdmQ4S8bA8Pv/z8ZOFl/MgAANdoP6+z0zPQAAAAASUVORK5CYII="
+
+# IF you want to directly generate data:image/png;base64, image - Useful for decoding on fly
+ BlurhashRuby.decode_blurhash('LHB3~nxvjYax0Mo#o#t7-cayWBWE', as_img: true)
+ # => "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAALElEQVR4XmMMSUj///3bB4YfX18xfP/xkYGFjdmQ4S8bA8Pv/z8ZOFl/MgAANdoP6+z0zPQAAAAASUVORK5CYII="
 ```
 
 ### Contributing
