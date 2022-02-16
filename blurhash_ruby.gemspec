@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
     s.files       = `git ls-files`.split("\n")
     s.require_paths = %w(lib)
     s.homepage    =
-        'https://rubygems.org/gems/blurhash_ruby'
+        'https://github.com/trip101/ruby-blurhash'
     s.license       = 'MIT'
     s.extensions = %w[ext/blurhash_decoder/extconf.rb ext/blurhash_encoder/extconf.rb]
 end
