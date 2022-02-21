@@ -40,6 +40,17 @@ BlurhashRuby.decode_blurhash('LHB3~nxvjYax0Mo#o#t7-cayWBWE')
  # => "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAYAAAB/qH1jAAAALElEQVR4XmMMSUj///3bB4YfX18xfP/xkYGFjdmQ4S8bA8Pv/z8ZOFl/MgAANdoP6+z0zPQAAAAASUVORK5CYII="
 ```
 
+### Known Issues
+Sometimes building native extension fails. You might have to install it this way:
+```shell
+gem install blurhash_ruby -- --with-cflags=\"-std=c99\"
+```
+OR,
+Update the bundle config
+```shell
+bundle config build.blurhash_ruby --with-cflags=\"-std=c99\"
+```
+
 ### Contributing
 1. Fork it
 2. Create your feature branch (git checkout -b my-new-feature)
